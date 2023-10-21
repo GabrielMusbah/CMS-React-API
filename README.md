@@ -13,21 +13,21 @@ Esta API fornece endpoints para gerenciar usuários, páginas, posts e "pagePost
 
 ### Páginas
 
-**- Buscar todas as páginas: GET /page**
-**- Buscar página por ID: GET /page/:id**
-**- Criar uma nova página: POST /page**
+- Buscar todas as páginas: GET /page  
+- Buscar página por ID: GET /page/:id  
+- Criar uma nova página: POST /page  
 
 ### Posts
 
-**- Buscar todos os posts: GET /post**
-**- Buscar post por ID: GET /post/:id**
-**- Criar um novo post: POST /post**
+- Buscar todos os posts: GET /post  
+- Buscar post por ID: GET /post/:id  
+- Criar um novo post: POST /post  
 
 ### PagePosts
 
-**- Buscar todos os PagePosts: GET /pagePost**
-**- Buscar PagePost por ID: GET /pagePost/:id**
-**- Criar um novo PagePost: POST /pagePost**
+- Buscar todos os PagePosts: GET /pagePost  
+- Buscar PagePost por ID: GET /pagePost/:id  
+- Criar um novo PagePost: POST /pagePost  
 
 ## Objetos para POST
 
