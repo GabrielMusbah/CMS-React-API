@@ -1,6 +1,7 @@
-# API de Gestão de Usuários, Páginas, Posts e PagePosts
+# CMS em JavaScript
 
-Esta API fornece endpoints para gerenciar usuários, páginas, posts e "pagePosts". Abaixo estão as rotas disponíveis e os objetos esperados para criação de cada recurso.
+Esta API foi desenvolvida com o intuito de criar um CMS inspirado no WordPress, porém construído inteiramente com JavaScript, utilizando Node.js no backend e React no frontend. 
+Ela fornece endpoints para gerenciar usuários, páginas, posts e "pagePosts". A seguir, são apresentadas as rotas disponíveis e os objetos esperados para criação de cada recurso.
 
 ## Rotas
 
@@ -27,6 +28,25 @@ Esta API fornece endpoints para gerenciar usuários, páginas, posts e "pagePost
 - Buscar todos os PagePosts: GET /pagePost  
 - Buscar PagePost por ID: GET /pagePost/:id  
 - Criar um novo PagePost: POST /pagePost  
+
+## Comandos de Script
+
+Para facilitar o desenvolvimento e a execução do projeto, foram definidos os seguintes scripts no `package.json`:
+
+- **build:** Compila os arquivos TypeScript para JavaScript.
+```bash
+npm run build
+```
+
+- **start:** Inicia o servidor com os arquivos JavaScript compilados.
+```bash
+npm start
+```
+
+- **dev:** Executa o projeto em modo de desenvolvimento com o `nodemon`, observando mudanças nos arquivos .ts.
+```bash
+npm run dev
+```
 
 ## Objetos para POST
 
