@@ -5,7 +5,6 @@ Esta API fornece endpoints para gerenciar usuários, páginas, posts e "pagePost
 ## Rotas
 
 ### Usuários
-### Usuários
 
 - Buscar todos os usuários: GET /user  
 - Buscar usuário por ID: GET /user/:id  
