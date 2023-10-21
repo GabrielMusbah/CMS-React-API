@@ -5,7 +5,10 @@ const prisma = new PrismaClient()
 async function findAllUsers() {
   try {
     const users = prisma.user.findMany({
-      include: {
+      select: {
+        id: true,
+        email: true,
+        name: true,
         pages: true,
         posts: true
       }
@@ -23,7 +26,10 @@ async function findUserById(id: number) {
       where: {
         id
       },
-      include: {
+      select: {
+        id: true,
+        email: true,
+        name: true,
         pages: true,
         posts: true
       }

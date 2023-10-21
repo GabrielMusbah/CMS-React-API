@@ -100,7 +100,6 @@ npm run dev
   "id": 1,
   "email": "teste@gmail.com",
   "name": "teste",
-  "password": "123",
   "pages": [
     {
         "id": 1,
