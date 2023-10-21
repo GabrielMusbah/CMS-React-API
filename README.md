@@ -33,17 +33,17 @@ Ela fornece endpoints para gerenciar usuários, páginas, posts e "pagePosts". A
 
 Para facilitar o desenvolvimento e a execução do projeto, foram definidos os seguintes scripts no `package.json`:
 
-- **build:** Compila os arquivos TypeScript para JavaScript.
+- **Build:** Compila os arquivos TypeScript para JavaScript.
 ```bash
 npm run build
 ```
 
-- **start:** Inicia o servidor com os arquivos JavaScript compilados.
+- **Start:** Inicia o servidor com os arquivos JavaScript compilados.
 ```bash
 npm start
 ```
 
-- **dev:** Executa o projeto em modo de desenvolvimento com o `nodemon`, observando mudanças nos arquivos .ts.
+- **Dev:** Executa o projeto em modo de desenvolvimento com o `nodemon`, observando mudanças nos arquivos .ts.
 ```bash
 npm run dev
 ```
