@@ -1,10 +1,14 @@
 import { Router } from "express"
+
+import { loginUserController } from '../controllers/loginController'
 import { createUserController, getAllUsersController, getUserByIdController } from "../controllers/userController"
 import { createPageController, getAllPagesController, getPageByIdController } from "../controllers/pageController"
 import { createPostController, getAllPostsController, getPostByIdController } from "../controllers/postController"
 import { createPageToPostController, getAllPageToPostController, getPageToPostByIdController } from "../controllers/pagePostController"
 
 const routes = Router()
+
+routes.post('/login', loginUserController)
 
 routes.get('/user', getAllUsersController)
 routes.get('/user/:id', getUserByIdController)

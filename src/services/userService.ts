@@ -41,6 +41,23 @@ async function findUserById(id: number) {
   }
 }
 
+async function findUserByEmail(email: string) {
+  try {
+    const user = prisma.user.findUnique({
+      where: {
+        email
+      },
+      select: {
+        password: true
+      }
+    })
+
+    return user
+  } catch (error) {
+    return { password: '' }
+  }
+}
+
 interface IUser {
   name: string;
   email: string;
@@ -66,5 +83,6 @@ async function createUser({ name, email, password }: IUser) {
 export {
   findAllUsers,
   findUserById,
+  findUserByEmail,
   createUser
 }
